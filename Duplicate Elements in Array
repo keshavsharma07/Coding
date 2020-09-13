@@ -1,0 +1,21 @@
+import java.util.HashSet;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        String str[]={"Keshav","Ravi","Raam","Saahm","Ravi","Keshav"};
+        
+            HashSet<String> set =new HashSet<String>();
+            for(String arr: str)
+            {
+                if(set.add(arr)==false)
+                {
+                    System.out.println("Duplicate Element " + arr);
+                }
+            }
+        
+        
+        
+     }
+}
