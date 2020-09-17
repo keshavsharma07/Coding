@@ -1,0 +1,39 @@
+import java.util.HashSet;
+import java.util.ArrayList;
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+       
+       
+       int arr[]={2,3,6,7,9,11};
+       int arr1[]={4,6,8,9,12};
+       
+        HashSet <Integer> set=new HashSet<>();
+        ArrayList <Integer> intersection=new ArrayList<>();
+        ArrayList <Integer> union=new ArrayList<>();
+        for(int a: arr)
+        {
+            set.add(a);
+            
+        }
+        
+        for(int b:arr1 )
+        {
+            if(set.contains(b))
+            {
+                intersection.add(b);
+            }
+            set.add(b);
+           
+        }
+     
+              
+             
+       
+       
+       
+       System.out.println("Intersection " + intersection);
+       System.out.println("Union " + set);
+     }
+}
