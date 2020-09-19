@@ -1,0 +1,30 @@
+
+public class Main
+{
+    static final int ASCII_SIZE=256;
+  public static void main (String[]args)
+  {
+      
+      int count[]=new int [ASCII_SIZE];
+      String s="abcsdeswqqqq";
+      int l=s.length();
+      for(int i=0;i<l;i++)
+      {
+          count[s.charAt(i)]++;
+      }
+      int max=0;
+      char result=' ';
+      
+      for(int i=0;i<l;i++)
+      {
+          if(max<count[s.charAt(i)])
+          {
+              max=count[s.charAt(i)];
+              result=s.charAt(i);
+          }
+      }
+      
+      System.out.println(result);
+      
+  }
+}
